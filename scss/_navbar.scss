@@ -1,11 +1,11 @@
 .navbar {
     display: flex;
-    color: map-get($colors, "primary");
     font-family: 'raleway';
 }
 
 .logo {
     font-size: 32px;
+    color: map-get($colors, "primary");
     text-align: left;
     position: relative;
     left: 136px;

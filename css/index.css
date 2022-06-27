@@ -6,12 +6,12 @@
 
 .navbar {
   display: flex;
-  color: #08A6E4;
   font-family: "raleway";
 }
 
 .logo {
   font-size: 32px;
+  color: #08A6E4;
   text-align: left;
   position: relative;
   left: 136px;
