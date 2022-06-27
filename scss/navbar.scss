@@ -1,4 +1,8 @@
 .navbar {
     display: flex;
-    
+    color: map-get($colors, "primary");
+}
+
+.logo {
+    font-size: large;
 }
