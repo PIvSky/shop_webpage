@@ -5,3 +5,12 @@
 // google font imports
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+// Media Queries
+
+@mixin sm {
+    @media screen and (max-width: 800px){}
+}
+@mixin lg {
+    @media screen and (min-width: 800px){}
+}
