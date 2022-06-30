@@ -4,28 +4,37 @@
   margin: 0;
 }
 
-.navbar {
-  display: flex;
-  font-family: "raleway";
-}
-
-.logo {
-  font-size: 32px;
-  color: #08A6E4;
-  text-align: left;
-  position: relative;
-  left: 136px;
-  top: 16px;
-  margin: 16px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.navbar-content {
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 3.28px;
-  text-decoration: none;
+@media screen and (min-width: 300px) {
+  .navbar {
+    font-family: "raleway";
+  }
+  ul {
+    list-style-type: none;
+  }
+  .logo {
+    font-size: 32px;
+    color: #08A6E4;
+    text-align: left;
+    position: relative;
+    left: 25px;
+    top: 17px;
+    margin: 17px;
+    opacity: 1;
+  }
+  .navbar-content {
+    font-family: "Open Sans";
+    font-size: 11px;
+    letter-spacing: 3.28px;
+    top: 100px;
+    left: 25px;
+    width: 60px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #A5A5A5;
+    opacity: 1;
+  }
+  .navbar-content:hover {
+    color: #000000;
+  }
 }

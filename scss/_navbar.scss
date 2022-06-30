@@ -1,24 +1,43 @@
-.navbar {
-    display: flex;
-    font-family: 'raleway';
-}
+// Mobile first methodology
 
-.logo {
-    font-size: 32px;
-    color: map-get($colors, "primary");
-    text-align: left;
-    position: relative;
-    left: 136px;
-    top: 16px;
-    margin: 16px;
-}
+@media screen and (min-width: 300px) {
 
-ul {
-    list-style-type: none;
-}
-.navbar-content {
-    font-family: 'Open Sans';
-    font-size: 15px;
-    letter-spacing: 3.28px;
-    text-decoration: none;
+    .navbar {
+        font-family: 'raleway';
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .logo {
+        font-size: 32px;
+        color: map-get($colors, "primary");
+        text-align: left;
+        position: relative;
+        left: 25px;
+        top: 17px;
+        margin: 17px;
+        opacity: 1;
+    }
+
+    .navbar-content {
+        font-family: 'Open Sans';
+        font-size: 11px;
+        letter-spacing: 3.28px;
+        top: 100px;
+        left: 25px;
+        width: 60px;
+        height: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: map-get($colors, "grey");
+        opacity: 1;
+        // :hover{
+        //     color: map-get($colors, "black");
+        // }
+    }
+        .navbar-content:hover {
+            color: map-get($colors, "black" )
+        }
 }
