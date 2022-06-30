@@ -19,8 +19,13 @@
   margin: 16px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .navbar-content {
   font-family: "Open Sans";
   font-size: 15px;
-  letter-spacing: 3px;
+  letter-spacing: 3.28px;
+  text-decoration: none;
 }

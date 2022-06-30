@@ -8,9 +8,6 @@
 
 // Media Queries
 
-@mixin sm {
-    @media screen and (max-width: 800px){}
-}
 @mixin lg {
     @media screen and (min-width: 800px){}
 }
