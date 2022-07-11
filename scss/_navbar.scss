@@ -7,7 +7,7 @@
 
     .container {
         font-family: 'raleway';
-    }
+    
 
         .logo {
             font-size: 32px;
@@ -18,8 +18,9 @@
             top: 17px;
             margin: 17px;
             opacity: 1;
+        }    
 
-            ul {
+            .nav-list {
                 list-style-type: none;
             
                 .navbar-content {
@@ -39,9 +40,11 @@
                     // }
                 
                     &:hover {
-                        color: map-get($colors, "black" )
+                        color: map-get($colors, "black" );
+                        transition: 2s;
                     }
+                }
             }        
-        }
             }
+    }
 }

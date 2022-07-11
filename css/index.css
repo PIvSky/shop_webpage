@@ -6,10 +6,10 @@
 }
 
 @media screen and (max-width: 799px) {
-  .container {
+  .header .container {
     font-family: "raleway";
   }
-  .logo {
+  .header .container .logo {
     font-size: 32px;
     color: #08A6E4;
     text-align: left;
@@ -19,10 +19,10 @@
     margin: 17px;
     opacity: 1;
   }
-  ul {
+  .header .container .nav-list {
     list-style-type: none;
   }
-  .navbar-content {
+  .header .container .nav-list .navbar-content {
     font-family: "Open Sans";
     font-size: 11px;
     letter-spacing: 3.28px;
@@ -35,7 +35,8 @@
     color: #A5A5A5;
     opacity: 1;
   }
-  .navbar-content:hover {
+  .header .container .nav-list .navbar-content:hover {
     color: #000000;
+    transition: 2s;
   }
 }
