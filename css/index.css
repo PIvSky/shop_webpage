@@ -2,14 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 300px) {
-  .navbar {
+@media screen and (max-width: 799px) {
+  .container {
     font-family: "raleway";
-  }
-  ul {
-    list-style-type: none;
   }
   .logo {
     font-size: 32px;
@@ -20,6 +18,9 @@
     top: 17px;
     margin: 17px;
     opacity: 1;
+  }
+  ul {
+    list-style-type: none;
   }
   .navbar-content {
     font-family: "Open Sans";
