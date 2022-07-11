@@ -6,8 +6,15 @@
 }
 
 @media screen and (max-width: 799px) {
+  .header {
+    height: 70px;
+    box-shadow: 0 3 6 rgba(0, 0, 0, 0.1607843137);
+  }
   .header .container {
+    height: max-content;
     font-family: "raleway";
+    display: flex;
+    align-items: center;
   }
   .header .container .logo {
     font-size: 32px;
@@ -19,12 +26,31 @@
     margin: 17px;
     opacity: 1;
   }
-  .header .container .nav-list {
+  .header .container nav .menu-btn {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+  }
+  .header .container nav .menu-btn span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-bottom: 3px;
+    background-color: #08A6E4;
+    transition: 0.3s all ease-in-out;
+  }
+  .header .container nav .menu-btn span:last-child {
+    margin-bottom: 0;
+  }
+  .header .container nav .nav-list {
     list-style-type: none;
   }
-  .header .container .nav-list .navbar-content {
+  .header .container nav .nav-list .navbar-content {
     font-family: "Open Sans";
     font-size: 11px;
+    text-transform: uppercase;
     letter-spacing: 3.28px;
     top: 100px;
     left: 25px;
@@ -35,7 +61,7 @@
     color: #A5A5A5;
     opacity: 1;
   }
-  .header .container .nav-list .navbar-content:hover {
+  .header .container nav .nav-list .navbar-content:hover {
     color: #000000;
     transition: 2s;
   }

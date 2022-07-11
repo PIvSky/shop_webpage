@@ -3,11 +3,15 @@
 @media screen and (max-width: 799px) {
 
 .header {
-
+    height: 70px;
+    box-shadow: 0 3 6 #00000029;
 
     .container {
+        height:max-content;
+        // przemyśleć ten height
         font-family: 'raleway';
-    
+        display: flex;
+        align-items: center;
 
         .logo {
             font-size: 32px;
@@ -19,32 +23,54 @@
             margin: 17px;
             opacity: 1;
         }    
+        nav {
+            .menu-btn{
+                display: none;
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+                opacity:0;
 
-            .nav-list {
-                list-style-type: none;
-            
-                .navbar-content {
-                    font-family: 'Open Sans';
-                    font-size: 11px;
-                    letter-spacing: 3.28px;
-                    top: 100px;
-                    left: 25px;
-                    width: 60px;
-                    height: 15px;
-                    text-align: center;
-                    text-decoration: none;
-                    color: map-get($colors, "grey");
-                    opacity: 1;
-                    // :hover{
-                    //     color: map-get($colors, "black");
-                    // }
-                
-                    &:hover {
-                        color: map-get($colors, "black" );
-                        transition: 2s;
+                    span {
+                        width: 20px;
+                            height: 2px;
+                            display: block;
+                            margin-bottom: 3px;
+                            background-color: map-get($colors, "primary");
+                            transition: .3s all ease-in-out;
+                        
+                            &:last-child {
+                              margin-bottom: 0;
+                            }
                     }
-                }
-            }        
+
+                    // @include sm {
+                    //     display: block;
+                    // }
             }
+                .nav-list {
+                    list-style-type: none;
+                
+                    .navbar-content {
+                        font-family: 'Open Sans';
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        letter-spacing: 3.28px;
+                        top: 100px;
+                        left: 25px;
+                        width: 60px;
+                        height: 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: map-get($colors, "grey");
+                        opacity: 1;
+                        &:hover {
+                            color: map-get($colors, "black" );
+                            transition: 2s;
+                        }
+                    }
+                }        
+            }
+        }
     }
 }
