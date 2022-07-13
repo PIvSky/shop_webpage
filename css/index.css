@@ -8,7 +8,7 @@
 @media screen and (max-width: 799px) {
   .header {
     height: 70px;
-    box-shadow: 0 3 6 rgba(7, 172, 230, 0.16);
+    box-shadow: 0 3 6 rgba(0, 0, 0, 0.16);
     width: 100%;
   }
   .header .container {
@@ -91,5 +91,11 @@
   .header .container nav .nav-list .navbar-content:hover {
     color: #000000;
     transition: 2s;
+  }
+}
+@media screen and (max-width: 799px) {
+  div.opener {
+    display: flex;
+    flex-direction: column;
   }
 }

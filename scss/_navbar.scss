@@ -4,7 +4,7 @@
 
 .header {
     height: 70px;
-    box-shadow: 0 3 6 map-get($colors, "primary-shadow");
+    box-shadow: 0 3 6 map-get($colors, "secondary-shadow");
     width: 100%;
 
     .container {
@@ -41,7 +41,7 @@
                 position: absolute;
                 top: -9999px;
                 left: -9999px;
-                opacity:0;
+                opacity: 0;
                 &:checked {
                 ~.nav-list {
                     display: flex;
@@ -76,7 +76,7 @@
                     }
 
                     // @include lg {
-                    //     display: block;
+                    //     display: none;
                     // }
             }
                 .nav-list {
