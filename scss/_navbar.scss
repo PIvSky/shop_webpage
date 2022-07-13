@@ -7,8 +7,7 @@
 
     .container {
         display: flex;
-        height: max-content;
-        justify-content: space-between;
+        // justify-content: space-between;
         // przemyśleć ten height
         font-family: 'raleway';
         align-items: center;
@@ -25,17 +24,49 @@
         opacity: 1;
     }    
         
-    nav {
-        position: absolute;
-        // pozycja abs. sprawiła że przeskoczył pod logo
-        left: 0;
-        top: 95px;
-        width: 100%;
-        flex-direction: column;
-        background-color: white;
-        padding-bottom: 20px;
-        // display: none;
+    // nav {
+    //     position: absolute;
+    //     // pozycja abs. sprawiła że przeskoczył pod logo
+    //     left: 0;
+    //     top: 95px;
+    //     width: 100%;
+    //     flex-direction: column;
+    //     background-color: white;
+    //     padding-bottom: 20px;
+    //     // display: none;
+    // }
+    
+    .navbar-list {
+        padding: 0 26px;
+            &:last-child{
+                padding-right: 0;
+            }
     }
+
+    // Dotąd w miarę poprawione !!!
+
+    .navbar-content {
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.28px;
+        top: 100px;
+        left: 25px;
+        width: 60px;
+        height: 15px;
+        display: block;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: map-get($colors, "grey");
+        opacity: 1;
+        &:hover {
+            color: map-get($colors, "black" );
+            transition: 2s;
+        }
+    }
+
 
     .menu-btn{
         display: none;
@@ -87,26 +118,6 @@
     }
 
     
-    .navbar-content {
-        font-family: 'Open Sans';
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 3.28px;
-        top: 100px;
-        left: 25px;
-        width: 60px;
-        height: 15px;
-        display: block;
-        padding: 14px 20px;
-        text-align: center;
-        text-decoration: none;
-        color: map-get($colors, "grey");
-        opacity: 1;
-        &:hover {
-            color: map-get($colors, "black" );
-            transition: 2s;
-        }
-    }
+
 
 }
