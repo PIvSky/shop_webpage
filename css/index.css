@@ -5,94 +5,93 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 799px) {
-  .header {
-    height: 70px;
-    box-shadow: 0 3 6 rgba(0, 0, 0, 0.16);
-    width: 100%;
-  }
-  .header .container {
-    display: flex;
-    height: max-content;
-    justify-content: space-between;
-    font-family: "raleway";
-    align-items: center;
-  }
-  .header .container .logo {
-    font-size: 32px;
-    color: #08A6E4;
-    text-align: left;
-    position: relative;
-    left: 25px;
-    top: 17px;
-    margin: 17px;
-    opacity: 1;
-  }
-  .header .container nav {
-    position: absolute;
-    left: 0;
-    top: 95px;
-    width: 100%;
-    flex-direction: column;
-    background-color: white;
-    padding-bottom: 20px;
-  }
-  .header .container nav .menu-btn {
-    display: none;
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    opacity: 0;
-  }
-  .header .container nav .menu-btn:checked ~ .nav-list {
-    display: flex;
-  }
-  .header .container nav .menu-btn:checked ~ .menu-toogle span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 5px);
-  }
-  .header .container nav .menu-btn:checked ~ .menu-toogle span:nth-child(2) {
-    opacity: 0;
-  }
-  .header .container nav .menu-btn:checked ~ .menu-toogle span:nth-child(3) {
-    transform: rotate(-45deg) translate(2px, -5px);
-  }
-  .header .container nav .menu-btn span {
-    width: 20px;
-    height: 2px;
-    display: block;
-    margin-bottom: 3px;
-    background-color: #08A6E4;
-    transition: 0.3s all ease-in-out;
-  }
-  .header .container nav .menu-btn span:last-child {
-    margin-bottom: 0;
-  }
-  .header .container nav .nav-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  .header .container nav .nav-list .navbar-content {
-    font-family: "Open Sans";
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3.28px;
-    top: 100px;
-    left: 25px;
-    width: 60px;
-    height: 15px;
-    display: block;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #A5A5A5;
-    opacity: 1;
-  }
-  .header .container nav .nav-list .navbar-content:hover {
-    color: #000000;
-    transition: 2s;
-  }
+.header {
+  height: 70px;
+  box-shadow: 0 3 6 rgba(0, 0, 0, 0.16);
+  width: 100%;
 }
+.header .container {
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+  font-family: "raleway";
+  align-items: center;
+}
+.header .logo {
+  font-size: 32px;
+  color: #08A6E4;
+  text-align: left;
+  position: relative;
+  left: 25px;
+  top: 17px;
+  margin: 17px;
+  opacity: 1;
+}
+.header nav {
+  position: absolute;
+  left: 0;
+  top: 95px;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.header .menu-btn {
+  display: none;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+.header .menu-btn:checked ~ .nav-list {
+  display: flex;
+}
+.header .menu-btn:checked ~ .menu-toogle span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 5px);
+}
+.header .menu-btn:checked ~ .menu-toogle span:nth-child(2) {
+  opacity: 0;
+}
+.header .menu-btn:checked ~ .menu-toogle span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -5px);
+}
+.header span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #08A6E4;
+  transition: 0.3s all ease-in-out;
+}
+.header span:last-child {
+  margin-bottom: 0;
+}
+.header .nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+.header .navbar-content {
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.28px;
+  top: 100px;
+  left: 25px;
+  width: 60px;
+  height: 15px;
+  display: block;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #A5A5A5;
+  opacity: 1;
+}
+.header .navbar-content:hover {
+  color: #000000;
+  transition: 2s;
+}
+
 @media screen and (max-width: 799px) {
   div.opener {
     display: flex;

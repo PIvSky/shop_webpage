@@ -1,7 +1,5 @@
 // Mobile first methodology
 
-@media screen and (max-width: 799px) {
-
 .header {
     height: 70px;
     box-shadow: 0 3 6 map-get($colors, "secondary-shadow");
@@ -14,35 +12,38 @@
         // przemyśleć ten height
         font-family: 'raleway';
         align-items: center;
+    }
 
-        .logo {
-            font-size: 32px;
-            color: map-get($colors, "primary");
-            text-align: left;
-            position: relative;
-            left: 25px;
-            top: 17px;
-            margin: 17px;
-            opacity: 1;
-        }    
-        nav {
-            position: absolute;
-            // pozycja abs. sprawiła że przeskoczył pod logo
-            left: 0;
-            top: 95px;
-            width: 100%;
-            flex-direction: column;
-            background-color: white;
-            padding-bottom: 20px;
-            // display: none;
+    .logo {
+        font-size: 32px;
+        color: map-get($colors, "primary");
+        text-align: left;
+        position: relative;
+        left: 25px;
+        top: 17px;
+        margin: 17px;
+        opacity: 1;
+    }    
+        
+    nav {
+        position: absolute;
+        // pozycja abs. sprawiła że przeskoczył pod logo
+        left: 0;
+        top: 95px;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding-bottom: 20px;
+        // display: none;
+    }
 
-            .menu-btn{
-                display: none;
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
-                opacity: 0;
-                &:checked {
+    .menu-btn{
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        opacity: 0;
+            &:checked {
                 ~.nav-list {
                     display: flex;
                 }
@@ -59,54 +60,53 @@
                         }
                     }
                 }
-                }
-
-                    span {
-                        width: 20px;
-                        height: 2px;
-                        display: block;
-                        margin-bottom: 3px;
-                        background-color: map-get($colors, "primary");
-                        transition: .3s all ease-in-out;
-                    
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                        // what da fuck?
-                    }
-
-                    // @include lg {
-                    //     display: none;
-                    // }
             }
-                .nav-list {
-                    list-style-type: none;
-                    padding: 0;
+    }
+    
 
-                
-                    .navbar-content {
-                        font-family: 'Open Sans';
-                        font-size: 11px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 3.28px;
-                        top: 100px;
-                        left: 25px;
-                        width: 60px;
-                        height: 15px;
-                        display: block;
-                        padding: 14px 20px;
-                        text-align: center;
-                        text-decoration: none;
-                        color: map-get($colors, "grey");
-                        opacity: 1;
-                        &:hover {
-                            color: map-get($colors, "black" );
-                            transition: 2s;
-                        }
-                    }
-                }        
-            }
+    span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: map-get($colors, "primary");
+        transition: .3s all ease-in-out;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    // @include lg {
+    //     display: none;
+    // }
+    }
+
+
+    .nav-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    
+    .navbar-content {
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.28px;
+        top: 100px;
+        left: 25px;
+        width: 60px;
+        height: 15px;
+        display: block;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: map-get($colors, "grey");
+        opacity: 1;
+        &:hover {
+            color: map-get($colors, "black" );
+            transition: 2s;
         }
     }
+
 }
