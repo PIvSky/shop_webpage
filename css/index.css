@@ -35,6 +35,7 @@
   font-family: "Open Sans";
   font-size: 11px;
   font-weight: 700;
+  color: #A5A5A5;
   text-transform: uppercase;
   letter-spacing: 3.28px;
   top: 100px;
@@ -45,12 +46,26 @@
   padding: 14px 20px;
   text-align: center;
   text-decoration: none;
-  color: #A5A5A5;
   opacity: 1;
 }
 .header .navbar-content:hover {
   color: #000000;
   transition: 2s;
+}
+.header .navbar-list {
+  display: flex;
+}
+.header .navbar-element {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 20px;
+  display: none;
 }
 .header .menu-btn {
   display: none;
@@ -81,10 +96,6 @@
 }
 .header span:last-child {
   margin-bottom: 0;
-}
-.header .nav-list {
-  list-style-type: none;
-  padding: 0;
 }
 
 @media screen and (max-width: 799px) {

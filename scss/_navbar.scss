@@ -24,6 +24,7 @@
         opacity: 1;
     }    
         
+    // to jest to, co umieściłem w navbar-list od row 73
     // nav {
     //     position: absolute;
     //     // pozycja abs. sprawiła że przeskoczył pod logo
@@ -43,14 +44,17 @@
             }
     }
 
-    // Dotąd w miarę poprawione !!!
+    // Dotąd w miarę poprawione 13.07. !!!
 
     .navbar-content {
         font-family: 'Open Sans';
         font-size: 11px;
+        // albo w remach?? font-size: 0,6875rem;
         font-weight: 700;
+        color: map-get($colors, "grey");
         text-transform: uppercase;
         letter-spacing: 3.28px;
+        // letter-spacing: 0.1875rem;
         top: 100px;
         left: 25px;
         width: 60px;
@@ -59,12 +63,29 @@
         padding: 14px 20px;
         text-align: center;
         text-decoration: none;
-        color: map-get($colors, "grey");
         opacity: 1;
         &:hover {
             color: map-get($colors, "black" );
             transition: 2s;
         }
+    }
+
+    .navbar-list {
+        display:  flex;
+    }
+
+    .navbar-element {
+    list-style-type: none;
+    padding: 0;
+    // poniżej to co od linijki 38 w rozw.
+    position: absolute;
+    left: 0;
+    top: 95px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    display: none;
     }
 
 
@@ -110,14 +131,6 @@
     //     display: none;
     // }
     }
-
-
-    .nav-list {
-        list-style-type: none;
-        padding: 0;
-    }
-
     
-
 
 }
