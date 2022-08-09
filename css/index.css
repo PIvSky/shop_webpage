@@ -48,6 +48,11 @@
     border-color: #08A6E4;
   }
 }
+@media screen and (min-width: 800px) {
+  .header .navbar-content {
+    border-bottom: 4px solid transparent;
+  }
+}
 .header .navbar-list {
   list-style-type: none;
   padding: 0;
@@ -65,12 +70,19 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 17px;
+    top: 0px;
     left: -135px;
+    padding: 1px;
+    align-items: 95px;
   }
 }
 .header .navbar-list .navbar-element {
   padding: 0;
+}
+@media screen and (min-width: 800px) {
+  .header .navbar-list .navbar-element {
+    padding: 0px 42px 0px;
+  }
 }
 .header .navbar-list .navbar-content {
   padding: 14px 20px;
@@ -81,6 +93,7 @@
   letter-spacing: 3.28px;
   letter-spacing: 0.1875rem;
   text-decoration: none;
+  opacity: 1;
 }
 @media screen and (min-width: 800px) {
   .header .menu {

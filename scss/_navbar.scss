@@ -32,8 +32,6 @@
             }
     }
 
-        // Dotąd w miarę poprawione 13.07. !!!
-
     .navbar-content {
         color: map-get($colors, "grey");
         font-weight: 700;
@@ -47,6 +45,9 @@
             @include lg {
                 border-color: map-get($colors, "primary");
             }
+         }
+         @include lg {
+             border-bottom: 4px solid transparent;
          }
     }
 
@@ -65,12 +66,18 @@
             display: flex;
             flex-direction: row;
             position: relative;
-            top: 17px;
+            top: 0px;
+            // bottom: 16px;
             left: -135px;
+            padding: 1px;
+            align-items: 95px;
         }
         
         .navbar-element {
             padding: 0;
+            @include lg {
+                padding: 0px 42px 0px;
+            }
         }
 
         .navbar-content {
@@ -89,7 +96,7 @@
             // height: 15px;
             // text-align: center;
             text-decoration: none;
-            // opacity: 1;
+            opacity: 1;
         }
     }
 
