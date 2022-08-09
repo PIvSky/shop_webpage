@@ -7,7 +7,7 @@
 
     .container {
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-between;
         // przemyśleć ten height
         font-family: 'raleway';
         align-items: center;
@@ -22,29 +22,56 @@
         top: 17px;
         margin: 17px;
         opacity: 1;
-    }    
+    }
         
-    // to jest to, co umieściłem w navbar-list od row 73
-    // nav {
-    //     position: absolute;
-    //     // pozycja abs. sprawiła że przeskoczył pod logo
-    //     left: 0;
-    //     top: 95px;
-    //     width: 100%;
-    //     flex-direction: column;
-    //     background-color: white;
-    //     padding-bottom: 20px;
-    //     // display: none;
-    // }
-    
-    .navbar-list {
+    .navbar-element {
         padding: 0 26px;
             &:last-child{
                 padding-right: 0;
             }
     }
 
-    // Dotąd w miarę poprawione 13.07. !!!
+        // Dotąd w miarę poprawione 13.07. !!!
+
+    .navbar-content {
+        color: map-get($colors, "grey");
+        font-weight: 700;
+        font-size: 0.6875rem;
+        text-transform: uppercase;
+        padding: 28px 18px 22px;
+        border-bottom: 4px solid transparent;
+        letter-spacing: 0.1875rem;
+         &:hover {
+            color: map-get($colors, "black");
+            border-color: map-get($colors, "primary");
+         }
+    }
+
+    .navbar-list {
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 95px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+        @include lg {
+            display: flex;
+        }
+        
+        .navbar-element {
+            padding: 0;
+        }
+
+        .navbar-content {
+            
+        }
+    }
+
+
 
     .navbar-content {
         font-family: 'Open Sans';
@@ -69,25 +96,6 @@
             transition: 2s;
         }
     }
-
-    .navbar-list {
-        display:  flex;
-    }
-
-    .navbar-element {
-    list-style-type: none;
-    padding: 0;
-    // poniżej to co od linijki 38 w rozw.
-    position: absolute;
-    left: 0;
-    top: 95px;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    padding-bottom: 20px;
-    display: none;
-    }
-
 
     .menu-btn{
         display: none;
