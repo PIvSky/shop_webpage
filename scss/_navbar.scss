@@ -42,6 +42,7 @@
         letter-spacing: 0.1875rem;
          &:hover {
             color: map-get($colors, "black");
+            transition: 2.5s;
             @include lg {
                 border-color: map-get($colors, "primary");
             }

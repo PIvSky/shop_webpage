@@ -42,6 +42,7 @@
 }
 .header .navbar-content:hover {
   color: #000000;
+  transition: 2.5s;
 }
 @media screen and (min-width: 800px) {
   .header .navbar-content:hover {
@@ -139,9 +140,11 @@
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 799px) {
-  div.opener {
-    display: flex;
-    flex-direction: column;
-  }
+.main .main-container-text {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.main .main-bg-pic {
+  width: 100%;
 }

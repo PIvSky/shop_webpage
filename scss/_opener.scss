@@ -1,8 +1,33 @@
-@media screen and (max-width: 799px) {
+// @media screen and (max-width: 799px) {
 
-div.opener {
-    display: flex;
-    flex-direction: column;
-}
+
+// }
+
+.main {
+    &-container{
+
+    }
+
+    .main-container-text {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    &-h1 {
+
+    }  
+
+    &-p {
+
+    }
+
+    &-btn {
+
+    }
+
+    .main-bg-pic {
+        width: 100%;
+    }
 
 }
