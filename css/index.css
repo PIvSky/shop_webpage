@@ -43,6 +43,11 @@
 .header .navbar-content:hover {
   color: #000000;
 }
+@media screen and (min-width: 800px) {
+  .header .navbar-content:hover {
+    border-color: #08A6E4;
+  }
+}
 .header .navbar-list {
   list-style-type: none;
   padding: 0;
@@ -58,6 +63,10 @@
 @media screen and (min-width: 800px) {
   .header .navbar-list {
     display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 17px;
+    left: -135px;
   }
 }
 .header .navbar-list .navbar-element {

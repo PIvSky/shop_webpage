@@ -44,6 +44,9 @@
         letter-spacing: 0.1875rem;
          &:hover {
             color: map-get($colors, "black");
+            @include lg {
+                border-color: map-get($colors, "primary");
+            }
          }
     }
 
@@ -60,6 +63,10 @@
         display: none;
         @include lg {
             display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 17px;
+            left: -135px;
         }
         
         .navbar-element {
