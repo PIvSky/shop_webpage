@@ -180,4 +180,8 @@
 }
 .main .main-bg-pic {
   width: 100%;
+  position: relative;
+  align-content: center;
+  top: 100px;
+  image-rendering: optimizeSpeed;
 }
