@@ -4,30 +4,52 @@
 // }
 
 .main {
-    &-container{
+    width: 100%;
 
-    }
+        &-container{
 
-    .main-container-text {
-        display: block;
-        position: relative;
-        text-align: center;
-    }
+        }
 
-    &-h1 {
+        .main-container-text {
+            display: block;
+            position: relative;
+            text-align: center;
+        }
 
-    }  
+        &-h1 {
+            position: relative;
+            top: 100px;
+            margin: 1px;
+            font-family: 'raleway';
+            font-weight: 400;
+        }  
 
-    &-p {
+        &-p {
+            position: relative;
+            top: 100px;
+            margin: 20px;
+            font-family: 'open sans';
+            opacity: 1;
+        }
 
-    }
+        &-btn {
+            position: relative;
+            top: 100px;
+            width: 310px;
+            height: 67px;
+            margin: 50px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+            font-size: 16px;
+            color: map-get($colors, 'light-grey' );
+            background-color: map-get($colors, 'primary');
+            border-radius: 40px;
+            border: none;
+            box-shadow: 5px 10px 14px #07ACE629;
+        }
 
-    &-btn {
-
-    }
-
-    .main-bg-pic {
-        width: 100%;
-    }
+        .main-bg-pic {
+            width: 100%;
+        }
 
 }

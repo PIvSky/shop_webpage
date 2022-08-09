@@ -65,6 +65,7 @@
   width: 100%;
   padding-bottom: 20px;
   display: none;
+  overflow: hidden;
 }
 @media screen and (min-width: 800px) {
   .header .navbar-list {
@@ -140,10 +141,42 @@
   margin-bottom: 0;
 }
 
+.main {
+  width: 100%;
+}
 .main .main-container-text {
   display: block;
   position: relative;
   text-align: center;
+}
+.main-h1 {
+  position: relative;
+  top: 100px;
+  margin: 1px;
+  font-family: "raleway";
+  font-weight: 400;
+}
+.main-p {
+  position: relative;
+  top: 100px;
+  margin: 20px;
+  font-family: "open sans";
+  opacity: 1;
+}
+.main-btn {
+  position: relative;
+  top: 100px;
+  width: 310px;
+  height: 67px;
+  margin: 50px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: #F7F7F7;
+  background-color: #08A6E4;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
 }
 .main .main-bg-pic {
   width: 100%;
