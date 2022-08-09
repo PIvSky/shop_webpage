@@ -65,35 +65,30 @@
 .header .navbar-list .navbar-element {
   padding: 0;
 }
-.header .navbar-content {
+.header .navbar-list .navbar-content {
+  padding: 14px 20px;
+  display: block;
   font-family: "Open Sans";
   font-size: 11px;
-  font-weight: 700;
-  color: #A5A5A5;
   text-transform: uppercase;
   letter-spacing: 3.28px;
-  top: 100px;
-  left: 25px;
-  width: 60px;
-  height: 15px;
-  display: block;
-  padding: 14px 20px;
-  text-align: center;
+  letter-spacing: 0.1875rem;
   text-decoration: none;
-  opacity: 1;
 }
-.header .navbar-content:hover {
-  color: #000000;
-  transition: 2s;
+@media screen and (min-width: 800px) {
+  .header .menu {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+  }
 }
-.header .menu-btn {
-  display: none;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  opacity: 0;
+@media screen and (min-width: 800px) {
+  .header .menu-btn {
+    display: none;
+  }
 }
-.header .menu-btn:checked ~ .nav-list {
+.header .menu-btn:checked ~ .navbar-list {
   display: flex;
 }
 .header .menu-btn:checked ~ .menu-toogle span:nth-child(1) {
@@ -105,7 +100,10 @@
 .header .menu-btn:checked ~ .menu-toogle span:nth-child(3) {
   transform: rotate(-45deg) translate(2px, -5px);
 }
-.header span {
+.header .menu-toggle {
+  display: block;
+}
+.header .menu-toggle span {
   width: 20px;
   height: 2px;
   display: block;
@@ -113,7 +111,7 @@
   background-color: #08A6E4;
   transition: 0.3s all ease-in-out;
 }
-.header span:last-child {
+.header .menu-toggle span:last-child {
   margin-bottom: 0;
 }
 

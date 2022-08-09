@@ -67,50 +67,44 @@
         }
 
         .navbar-content {
-            
+            padding: 14px 20px;
+            display: block;
+            font-family: 'Open Sans';
+            font-size: 11px;
+            // albo w remach?? font-size: 0,6875rem;
+            // font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3.28px;
+            letter-spacing: 0.1875rem;
+            // top: 100px;
+            // left: 25px;
+            // width: 60px;
+            // height: 15px;
+            // text-align: center;
+            text-decoration: none;
+            // opacity: 1;
         }
     }
 
-
-
-    .navbar-content {
-        font-family: 'Open Sans';
-        font-size: 11px;
-        // albo w remach?? font-size: 0,6875rem;
-        font-weight: 700;
-        color: map-get($colors, "grey");
-        text-transform: uppercase;
-        letter-spacing: 3.28px;
-        // letter-spacing: 0.1875rem;
-        top: 100px;
-        left: 25px;
-        width: 60px;
-        height: 15px;
-        display: block;
-        padding: 14px 20px;
-        text-align: center;
-        text-decoration: none;
-        opacity: 1;
-        &:hover {
-            color: map-get($colors, "black" );
-            transition: 2s;
+    .menu {
+        @include lg {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            opacity: 0;
         }
-    }
-
-    .menu-btn{
-        display: none;
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-        opacity: 0;
+        &-btn {
+            @include lg {
+                display: none;
+            }
             &:checked {
-                ~.nav-list {
+                ~.navbar-list {
                     display: flex;
                 }
                 ~.menu-toogle {
                     span {
                         &:nth-child(1) {
-                            transform:rotate(45deg) translate(2px, 5px);
+                            transform: rotate(45deg) translate(2px, 5px);
                         }
                         &:nth-child(2) {
                             opacity: 0;
@@ -121,24 +115,20 @@
                     }
                 }
             }
-    }
-    
-
-    span {
-        width: 20px;
-        height: 2px;
-        display: block;
-        margin-bottom: 3px;
-        background-color: map-get($colors, "primary");
-        transition: .3s all ease-in-out;
-    
-        &:last-child {
-            margin-bottom: 0;
         }
-    // @include lg {
-    //     display: none;
-    // }
+        &-toggle {
+            display: block;
+            span {
+                width: 20px;
+                height: 2px;
+                display: block;
+                margin-bottom: 3px;
+                background-color: map-get($colors, "primary");
+                transition: .3s all ease-in-out;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
-    
-
 }
