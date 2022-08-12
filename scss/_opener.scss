@@ -18,42 +18,55 @@
 
         &-h1 {
             position: relative;
-            top: 100px;
-            // margin: 1px;
+            top: 170px;
+            margin: 0px;
             font-family: 'raleway';
             font-weight: 400;
         }  
 
         &-p {
             position: relative;
-            top: 100px;
-            margin: 20px;
+            top: 231px;
+            margin: 0px;
             font-family: 'open sans';
             opacity: 1;
         }
 
         &-btn {
             position: relative;
-            top: 100px;
+            top: 316px;
             width: 310px;
             height: 67px;
-            margin: 50px;
+            margin: 0px;
             font-family: 'Open Sans';
             font-weight: bold;
             font-size: 16px;
-            color: map-get($colors, 'light-grey' );
+            color: map-get($colors, 'light-grey');
             background-color: map-get($colors, 'primary');
             border-radius: 40px;
             border: none;
             box-shadow: 5px 10px 14px #07ACE629;
+            @include lg {
+                width: 440px;
+            }
         }
 
         .main-bg-pic {
-            width: 100%;
+            width: 220%;
+            transform: translateX(-28%);
+            // tę metodę powiększenia wziąłem z rozwiązania
             position: relative;
             align-content: center;
-            top: 100px;
-            image-rendering: optimizeSpeed;
+            top: 434px;
+            opacity: 1;
+
+            @include lg {
+                width: 100%;
+                transform: none;
+            }
+            
+            // image-rendering: optimizeSpeed;
+
         }
 
 }

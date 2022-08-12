@@ -152,23 +152,24 @@
 }
 .main-h1 {
   position: relative;
-  top: 100px;
+  top: 170px;
+  margin: 0px;
   font-family: "raleway";
   font-weight: 400;
 }
 .main-p {
   position: relative;
-  top: 100px;
-  margin: 20px;
+  top: 231px;
+  margin: 0px;
   font-family: "open sans";
   opacity: 1;
 }
 .main-btn {
   position: relative;
-  top: 100px;
+  top: 316px;
   width: 310px;
   height: 67px;
-  margin: 50px;
+  margin: 0px;
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 16px;
@@ -178,10 +179,27 @@
   border: none;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
 }
+@media screen and (min-width: 800px) {
+  .main-btn {
+    width: 440px;
+  }
+}
 .main .main-bg-pic {
-  width: 100%;
+  width: 220%;
+  transform: translateX(-28%);
   position: relative;
   align-content: center;
-  top: 100px;
-  image-rendering: optimizeSpeed;
+  top: 434px;
+  opacity: 1;
+}
+@media screen and (min-width: 800px) {
+  .main .main-bg-pic {
+    width: 100%;
+    transform: none;
+  }
+}
+
+.stats__title {
+  top: 714px;
+  font-family: "Open Sans";
 }
