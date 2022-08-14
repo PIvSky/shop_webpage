@@ -5,6 +5,8 @@
 
 .main {
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
 
         &-container{
 
@@ -18,7 +20,6 @@
 
         &-h1 {
             position: relative;
-            top: 170px;
             margin: 0px;
             font-family: 'raleway';
             font-weight: 400;
@@ -26,18 +27,16 @@
 
         &-p {
             position: relative;
-            top: 231px;
-            margin: 0px;
+            margin-top: 20px;
             font-family: 'open sans';
             opacity: 1;
         }
 
         &-btn {
             position: relative;
-            top: 316px;
             width: 310px;
             height: 67px;
-            margin: 0px;
+            margin-top: 28px;
             font-family: 'Open Sans';
             font-weight: bold;
             font-size: 16px;
@@ -56,8 +55,8 @@
             transform: translateX(-28%);
             // tę metodę powiększenia wziąłem z rozwiązania
             position: relative;
+            margin-top: 51px;
             align-content: center;
-            top: 434px;
             opacity: 1;
 
             @include lg {

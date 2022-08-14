@@ -144,6 +144,8 @@
 
 .main {
   width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .main .main-container-text {
   display: block;
@@ -152,24 +154,21 @@
 }
 .main-h1 {
   position: relative;
-  top: 170px;
   margin: 0px;
   font-family: "raleway";
   font-weight: 400;
 }
 .main-p {
   position: relative;
-  top: 231px;
-  margin: 0px;
+  margin-top: 20px;
   font-family: "open sans";
   opacity: 1;
 }
 .main-btn {
   position: relative;
-  top: 316px;
   width: 310px;
   height: 67px;
-  margin: 0px;
+  margin-top: 28px;
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 16px;
@@ -188,8 +187,8 @@
   width: 220%;
   transform: translateX(-28%);
   position: relative;
+  margin-top: 51px;
   align-content: center;
-  top: 434px;
   opacity: 1;
 }
 @media screen and (min-width: 800px) {
@@ -199,7 +198,30 @@
   }
 }
 
-.stats__title {
-  top: 714px;
-  font-family: "Open Sans";
+.stats__tittle {
+  position: relative;
+  margin: 20px 36px 0px 36px;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0px;
+  overflow: visible;
+  opacity: 1;
+}
+.stats__graphics {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats__graphics--red {
+  margin-top: 25px;
+}
+.stats .stats.person {
+  position: relative;
+  text-align: center;
+}
+.stats .red.tittle {
+  font-family: "raleway";
 }
