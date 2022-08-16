@@ -16,24 +16,60 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    &__graphics--red {
-        margin-top: 25px;
-    }
-
-    .stats.person {
-        position: relative;
-        text-align: center;
-    }
-
-    .red.tittle {
-        font-family: 'raleway';
         
     }
 
-    .red.text {
 
+    div {
+        position: relative;
+        margin-top: 25px;
+        // width: 176px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .stats__circle-1 {
+        background: map-get($colors, "red" );
+        border-radius: 50%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .stats__circle-2 {
+        background: map-get($colors, "primary" );
+        border-radius: 50%;
+        width: 63px;
+        height: 63px;
+        }
+
+    .stats__circle-3 {
+        background: map-get($colors, "green" );
+        border-radius: 50%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .stats_img {
+        background: transparent;
+        opacity: 1;
+    }
+
+    .stats__txt1 {
+        color: map-get($colors, "black" );
+        font-family: 'raleway';
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 11px;
+    }
+
+    .stats__txt2 {
+        color: map-get($colors, "grey" );
+        font-family: 'raleway';
+        font-weight: normal;
+        font-size: 20px;
+        margin-top: 19px;
+        opacity: 0.8;
     }
 
 }
+

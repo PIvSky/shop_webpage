@@ -215,13 +215,46 @@
   flex-direction: column;
   align-items: center;
 }
-.stats__graphics--red {
-  margin-top: 25px;
-}
-.stats .stats.person {
+.stats div {
   position: relative;
+  margin-top: 25px;
   text-align: center;
+  align-items: center;
 }
-.stats .red.tittle {
+.stats .stats__circle-1 {
+  background: #FB3B64;
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+}
+.stats .stats__circle-2 {
+  background: #08A6E4;
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+}
+.stats .stats__circle-3 {
+  background: #55DFB4;
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+}
+.stats .stats_img {
+  background: transparent;
+  opacity: 1;
+}
+.stats .stats__txt1 {
+  color: #000000;
   font-family: "raleway";
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 11px;
+}
+.stats .stats__txt2 {
+  color: #A5A5A5;
+  font-family: "raleway";
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 19px;
+  opacity: 0.8;
 }
