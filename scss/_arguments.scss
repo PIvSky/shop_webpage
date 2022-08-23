@@ -1,6 +1,23 @@
 .arguments {
     background-color: map-get($colors, "light-grey");
+    position: relative;
+    
+    .rectangle-tittle {
+        font-size: 36px;
+        font-family: 'Raleway';
+        font-weight: normal;
+        color: #000000;
+    }
 
+    .rectangle-text {
+        font-size: 16px;
+        font-family: 'Open Sans';
+        font-weight: 200;
+        color: #000000;
+    }
 
-
+    .rectangle7 {
+        width: 1124px;
+    }
+    
 }
