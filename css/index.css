@@ -309,7 +309,6 @@
 
 .arguments {
   background-color: #F7F7F7;
-  position: relative;
 }
 .arguments .rectangle-tittle {
   font-size: 36px;
@@ -325,17 +324,33 @@
   color: #000000;
 }
 .arguments .rectangle7 {
-  background-color: white;
+  background-color: #FFFFFF;
   position: relative;
-  margin: 42 30 0;
-  height: 370px;
-  width: 314px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   align-items: center;
+  top: 42px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .arguments .rectangle7__img {
+  position: relative;
+  top: 38px;
+  left: 55px;
+  right: 65px;
   width: 193px;
   height: 110px;
+}
+.arguments .rectangle7__sqaure {
+  background: #FB3B64;
+  height: 127px;
+  width: 127px;
+  border-radius: 40%;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: relative;
+  display: inline;
+  top: 30px;
+  left: 100px;
+  z-index: 1;
 }
