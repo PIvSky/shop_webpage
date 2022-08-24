@@ -198,6 +198,9 @@
   }
 }
 
+.stats {
+  margin-bottom: 50px;
+}
 .stats__tittle {
   position: relative;
   margin: 20px 36px 0px 36px;
@@ -313,6 +316,7 @@
   font-family: "Raleway";
   font-weight: normal;
   color: #000000;
+  margin: 26 21 10 21;
 }
 .arguments .rectangle-text {
   font-size: 16px;
@@ -321,5 +325,17 @@
   color: #000000;
 }
 .arguments .rectangle7 {
-  width: 1124px;
+  background-color: white;
+  position: relative;
+  margin: 42 30 0;
+  height: 370px;
+  width: 314px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.arguments .rectangle7__img {
+  width: 193px;
+  height: 110px;
 }

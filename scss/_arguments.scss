@@ -7,6 +7,7 @@
         font-family: 'Raleway';
         font-weight: normal;
         color: #000000;
+        margin: 26 21 10 21;
     }
 
     .rectangle-text {
@@ -17,7 +18,21 @@
     }
 
     .rectangle7 {
-        width: 1124px;
+        background-color: white;
+        position: relative;
+        // top: 42px;
+        margin: 42 30 0;
+        height: 370px;
+        width: 314px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        &__img {
+            width: 193px;
+            height: 110px;
+        }
     }
+
     
 }
