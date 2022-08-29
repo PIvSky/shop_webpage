@@ -58,6 +58,19 @@
     }
 
     .rectangle10 {
-        
+        position: relative;
+        left: 30px;
+        width: 314px;
+        height: 195px;
+        background-color: map-get($colors, "green" );
+        &__img{
+            position: absolute;
+            // object-position: center;
+            // margin-left: auto;
+            // margin-right: auto;
+            // czemu to się kurwa nie centruje - ani górna ani dolna metoda
+            width: 296px;
+            height: 208px;
+        }
     }
 }

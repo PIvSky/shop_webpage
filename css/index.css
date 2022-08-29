@@ -354,3 +354,15 @@
   left: 100px;
   z-index: 1;
 }
+.arguments .rectangle10 {
+  position: relative;
+  left: 30px;
+  width: 314px;
+  height: 195px;
+  background-color: #55DFB4;
+}
+.arguments .rectangle10__img {
+  position: absolute;
+  width: 296px;
+  height: 208px;
+}
