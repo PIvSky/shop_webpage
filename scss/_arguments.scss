@@ -13,23 +13,27 @@
         flex-direction: column;
         // align-items: center;
 
+
         &__img {
             position: relative;
+            margin-top: 38px;
+            margin-bottom:  27px;
+            margin: auto;
             display: flex;
-            justify-content: center;
-            // top: 38px;
-            // left: 55px;
+            top: 38px;
             width: 193px;
             height: 110px;
+            opacity: 1;
+            z-index: 2;
         }
         &__sqaure {
-            position: relative;
+            position: absolute;
             display: flex;
-            top: 30px;
-            left: 100px;
+            top: 27px;
+            left: 174px;
             background: map-get($colors, "red" );
-            height: 127px;
-            width: 127px;
+            height: 90px;
+            width: 90px;
             border-radius: 40%;
             transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
             z-index: 1;
@@ -37,6 +41,8 @@
         &__tittle {
             font-size: 36px;
             position: relative;
+            top: 27px;
+            display: block;
             margin: 26px 21px 10px 21px;
             font-family: 'Raleway';
             font-weight: normal;
@@ -44,6 +50,7 @@
         }
         &__text {
             position: relative;
+            top: 70px;
             margin: 10px 21px 30px 22px;
             font-size: 16px;
             font-family: 'Open Sans';
