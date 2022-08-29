@@ -7,12 +7,12 @@
         top: 42px;
         margin-left: 30px;
         margin-right: 30px;
+        height: 370px;
         // left: 30px;
         // right: 30px;
         display: flex;
         flex-direction: column;
         // align-items: center;
-
 
         &__img {
             position: relative;
@@ -29,7 +29,7 @@
         &__sqaure {
             position: absolute;
             display: flex;
-            top: 27px;
+            top: 20px;
             left: 174px;
             background: map-get($colors, "red" );
             height: 90px;
@@ -39,7 +39,7 @@
             z-index: 1;
         }
         &__tittle {
-            font-size: 36px;
+            font-size: 30px;
             position: relative;
             top: 27px;
             display: block;
@@ -50,17 +50,74 @@
         }
         &__text {
             position: relative;
+            display: block;
             top: 70px;
             margin: 10px 21px 30px 22px;
             font-size: 16px;
             font-family: 'Open Sans';
-            font-weight: 200;
+            font-weight: 400;
             color: #000000;
+            // czemu to kurwa wystaje poza diva --> pewnie przez flex, 
+            // ale jak to naprawić;
         }
     }
 
     .rectangle8 {
-
+            background-color: map-get($colors,"white");
+            position: relative;
+            top: 41px;
+            margin-top: 41px;
+            margin-left: 30px;
+            margin-right: 30px;
+            // left: 30px;
+            // right: 30px;
+            display: flex;
+            flex-direction: column;
+            &__img {
+                position: absolute;
+                margin-top: 38px;
+                margin-bottom:  27px;
+                margin: auto;
+                display: flex;
+                top: 19px;
+                left: 90px;
+                width: 193px;
+                height: 110px;
+                opacity: 1;
+                z-index: 2;
+            }
+            &__circle {
+                background: map-get($colors, "primary" );
+                border-radius: 50%;
+                width: 132px;
+                height: 132px;
+                margin: auto;
+                position: absolute;
+                // display: flex;
+                top: 12px;
+                left: 90px;
+            }
+            &__tittle {
+                font-size: 30px;
+                position: absolute;
+                top: 180px;
+                left: 22px;
+                display: block;
+                margin: 26px 21px 10px 21px;
+                font-family: 'Raleway';
+                font-weight: normal;
+                color: #000000;
+            }
+            &__text {
+                position: absolute;
+                top: 268px;
+                left: 22px;
+                margin: 18px 21px 30px 22px;
+                font-size: 16px;
+                font-family: 'Open Sans';
+                font-weight: 400;
+                color: #000000;
+            }
     }
 
     .rectangle9 {
