@@ -1,5 +1,10 @@
 .arguments {
     background-color: map-get($colors, "light-grey");
+    display: flex;
+    flex-direction: column;
+    @include lg {
+        flex-direction: row;
+    }
     
     .rectangle7 {
         background-color: map-get($colors,"white");
@@ -8,8 +13,6 @@
         margin-left: 30px;
         margin-right: 30px;
         height: 370px;
-        // left: 30px;
-        // right: 30px;
         display: flex;
         flex-direction: column;
         // align-items: center;
@@ -66,13 +69,10 @@
             background-color: map-get($colors,"white");
             position: relative;
             top: 41px;
-            margin-top: 41px;
-            margin-left: 30px;
-            margin-right: 30px;
-            // left: 30px;
-            // right: 30px;
-            display: flex;
-            flex-direction: column;
+            bottom: 20px;
+            margin: 41px 30px 0px 30px;
+            // display: flex;
+            // flex-direction: column;
             &__img {
                 position: absolute;
                 margin-top: 38px;
@@ -99,19 +99,17 @@
             }
             &__tittle {
                 font-size: 30px;
-                position: absolute;
-                top: 180px;
-                left: 22px;
-                display: block;
-                margin: 26px 21px 10px 21px;
+                position: relative;
+                top: 100px;
+                padding: 12px 0px 12px 0px;
+                margin: 0px 21px 0px 21px;
                 font-family: 'Raleway';
                 font-weight: normal;
                 color: #000000;
             }
             &__text {
-                position: absolute;
-                top: 268px;
-                left: 22px;
+                position: relative;
+                top: 100px;
                 margin: 18px 21px 30px 22px;
                 font-size: 16px;
                 font-family: 'Open Sans';
@@ -121,17 +119,38 @@
     }
 
     .rectangle9 {
-
+            background-color: map-get($colors,"white");
+            position: relative;
+            top: 41px;
+            margin: 41px 30px 0px 30px;
+            &__tittle {
+                font-size: 30px;
+                position: relative;
+                top: 10px;
+                display: block;
+                margin: 26px 21px 10px 21px;
+                font-family: 'Raleway';
+                font-weight: normal;
+                color: #000000;
+            }
+            &__text {
+                position: relative;
+                top: 10px;
+                margin: 18px 21px 30px 22px;
+                font-size: 16px;
+                font-family: 'Open Sans';
+                font-weight: 400;
+                color: #000000;
+            }
     }
 
     .rectangle10 {
         position: relative;
-        left: 30px;
-        width: 314px;
-        height: 195px;
+        top: 30px;
+        margin: 41px 30px 0px 30px;
         background-color: map-get($colors, "green" );
         &__img{
-            position: absolute;
+            position: relative;
             // object-position: center;
             // margin-left: auto;
             // margin-right: auto;
