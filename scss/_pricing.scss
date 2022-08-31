@@ -1,0 +1,70 @@
+.pricing {
+    background-color: map-get($colors, "white");
+    .pricing-tittle {
+        font-size: 36px;
+        font-family: 'Raleway';
+        font-weight: normal;
+        color: #000000;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+    .pricing-square-red {
+        border: 1px solid map-get($colors, "red");
+        border-radius: 18px;
+        width: 293px;
+        height: 251px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 54px;
+        margin: auto;
+        .square-red-tittle {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            font-size: 20px;
+            font-family: 'Raleway';
+            font-weight: bold;
+            color: #000000;
+        }
+        .square-red-price {
+            position: absolute;
+            top: 95px;
+            left: 45px;
+            font-size: 46px;
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color: map-get($colors, "red");
+        }
+        .square-red-btn {
+            width: 150px;
+            height: 50px;
+            border-radius: 23px;
+            color: map-get($colors, "white");
+            border: none;
+            background-color: map-get($colors, "red");
+            opacity: 1;
+            position: absolute;
+            top: 226px; 
+            font-size: 13px;
+            font-family: 'Open Sans';
+        }
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            margin: 1px;
+            position: relative;
+            top: 10px;
+            left: 60px;
+        }
+        .checkmark {
+            position: relative;
+            top: 30px;
+            left: 45px;
+        }
+
+    }
+}

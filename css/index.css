@@ -447,7 +447,6 @@
 }
 .arguments .rectangle10 {
   position: relative;
-  top: 30px;
   margin: 41px 30px 0px 30px;
   background-color: #55DFB4;
 }
@@ -455,4 +454,74 @@
   position: relative;
   width: 296px;
   height: 208px;
+}
+
+.pricing {
+  background-color: #FFFFFF;
+}
+.pricing .pricing-tittle {
+  font-size: 36px;
+  font-family: "Raleway";
+  font-weight: normal;
+  color: #000000;
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+.pricing .pricing-square-red {
+  border: 1px solid #FB3B64;
+  border-radius: 18px;
+  width: 293px;
+  height: 251px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 54px;
+  margin: auto;
+}
+.pricing .pricing-square-red .square-red-tittle {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #000000;
+}
+.pricing .pricing-square-red .square-red-price {
+  position: absolute;
+  top: 95px;
+  left: 45px;
+  font-size: 46px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #FB3B64;
+}
+.pricing .pricing-square-red .square-red-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #FB3B64;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  font-size: 13px;
+  font-family: "Open Sans";
+}
+.pricing .pricing-square-red li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  margin: 1px;
+  position: relative;
+  top: 10px;
+  left: 60px;
+}
+.pricing .pricing-square-red .checkmark {
+  position: relative;
+  top: 30px;
+  left: 45px;
 }
