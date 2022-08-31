@@ -1,0 +1,33 @@
+.contact {
+    .contact-tittle {
+        margin-top: 77px;
+        margin-left: 30px; 
+        font-size: 40px;
+        font-family: 'raleway';
+        font-weight: 500;
+
+    }
+    .contact-text {
+        margin-top: 5px;
+        margin-left: 30px;
+        font-size: 16px;
+        font-family: 'Open sans';
+        font-weight: 400;
+    }
+    .contact-mail-icon{
+        display: inline;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+    .contact-mail-text {
+        display: inline;
+        margin-top: 5px;
+        margin-left: 65px;
+        font-size: 16px;
+        font-family: 'Open sans';
+        font-weight: 400;
+    }
+    .contact-phone-icon{
+        display: block;
+    }
+}

@@ -2,6 +2,9 @@
     background-color: map-get($colors, "white");
     display: flex;
     flex-direction: column;
+        @include lg {
+            flex-direction: row;
+        }
     .pricing-tittle {
         font-size: 36px;
         font-family: 'Raleway';
@@ -10,6 +13,10 @@
         margin-top: 53px;
         margin-bottom: 14px;
         text-align: center;
+        // @include lg {
+        //     position: relative;
+        //     margin: auto;
+        // }
     }
     .pricing-square-red {
         border: 1px solid map-get($colors, "red");
@@ -20,6 +27,9 @@
         justify-content: center;
         position: relative;
         margin: auto;
+        @include lg {
+            
+        }
         .square-red-tittle {
             position: absolute;
             top: 70px;
@@ -81,11 +91,10 @@
         box-shadow: 5px 10px 27px #07ACE629;
         width: 339px;
         height: 277px;
-        
         .square-blue-tittle {
             position: absolute;
             top: 91px;
-            left: 50px;
+            left: 28px;
             font-size: 20px;
             font-family: 'Raleway';
             font-weight: bold;
@@ -94,7 +103,7 @@
         .square-blue-price {
             position: absolute;
             top: 116px;
-            left: 66px;
+            left: 48px;
             font-size: 46px;
             font-family: 'Open Sans';
             font-weight: 300;
@@ -103,7 +112,7 @@
         .square-price-subtitle {
             position: absolute;
             top: 180px;
-            left: 69px;
+            left: 51px;
             font-size: 12px;
             font-family: 'Raleway';
             font-weight: bold;
@@ -137,6 +146,70 @@
             }
             &:nth-child(n+5)::before {
                 content: url("/assets/Close.svg");
+                margin-right: 10px;
+            }
+        }
+    }
+    .pricing-square-green {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 54px auto 0px; 
+        border: 1px solid map-get($colors, "green");
+        border-radius: 18px;
+        width: 293px;
+        height: 251px;
+        .square-blue-tittle {
+            position: absolute;
+            top: 70px;
+            left: 31px;
+            font-size: 20px;
+            font-family: 'Raleway';
+            font-weight: bold;
+            color: map-get($colors, "black");
+        }
+        .square-blue-price {
+            position: absolute;
+            top: 88px;
+            left: 35px;
+            font-size: 46px;
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color: map-get($colors, "primary");
+        }
+        .square-price-subtitle {
+            position: absolute;
+            top: 145px;
+            left: 38px;
+            font-size: 12px;
+            font-family: 'Raleway';
+            font-weight: bold;
+            color: map-get($colors, "black");
+        }
+        .square-blue-btn {
+            width: 150px;
+            height: 50px;
+            border-radius: 23px;
+            color: map-get($colors, "white");
+            border: none;
+            background-color: map-get($colors, "green");
+            opacity: 1;
+            position: absolute;
+            top: 226px; 
+            font-size: 13px;
+            font-family: 'Open Sans';
+        }
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            position: relative;
+            top: 10px;
+            left: 46px;
+            margin-top: 20px;
+            &:before {
+                content: url("/assets/Chechmark-1.svg");
                 margin-right: 10px;
             }
         }

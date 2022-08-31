@@ -453,6 +453,11 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 800px) {
+  .pricing {
+    flex-direction: row;
+  }
+}
 .pricing .pricing-tittle {
   font-size: 36px;
   font-family: "Raleway";
@@ -535,7 +540,7 @@
 .pricing .pricing-square-blue .square-blue-tittle {
   position: absolute;
   top: 91px;
-  left: 50px;
+  left: 28px;
   font-size: 20px;
   font-family: "Raleway";
   font-weight: bold;
@@ -544,7 +549,7 @@
 .pricing .pricing-square-blue .square-blue-price {
   position: absolute;
   top: 116px;
-  left: 66px;
+  left: 48px;
   font-size: 46px;
   font-family: "Open Sans";
   font-weight: 300;
@@ -553,7 +558,7 @@
 .pricing .pricing-square-blue .square-price-subtitle {
   position: absolute;
   top: 180px;
-  left: 69px;
+  left: 51px;
   font-size: 12px;
   font-family: "Raleway";
   font-weight: bold;
@@ -589,4 +594,99 @@
 .pricing .pricing-square-blue li:nth-child(n+5)::before {
   content: url("/assets/Close.svg");
   margin-right: 10px;
+}
+.pricing .pricing-square-green {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 54px auto 0px;
+  border: 1px solid #55DFB4;
+  border-radius: 18px;
+  width: 293px;
+  height: 251px;
+}
+.pricing .pricing-square-green .square-blue-tittle {
+  position: absolute;
+  top: 70px;
+  left: 31px;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #000000;
+}
+.pricing .pricing-square-green .square-blue-price {
+  position: absolute;
+  top: 88px;
+  left: 35px;
+  font-size: 46px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #08A6E4;
+}
+.pricing .pricing-square-green .square-price-subtitle {
+  position: absolute;
+  top: 145px;
+  left: 38px;
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #000000;
+}
+.pricing .pricing-square-green .square-blue-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #55DFB4;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  font-size: 13px;
+  font-family: "Open Sans";
+}
+.pricing .pricing-square-green li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  left: 46px;
+  margin-top: 20px;
+}
+.pricing .pricing-square-green li:before {
+  content: url("/assets/Chechmark-1.svg");
+  margin-right: 10px;
+}
+
+.contact .contact-tittle {
+  margin-top: 77px;
+  margin-left: 30px;
+  font-size: 40px;
+  font-family: "raleway";
+  font-weight: 500;
+}
+.contact .contact-text {
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: "Open sans";
+  font-weight: 400;
+}
+.contact .contact-mail-icon {
+  display: inline;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.contact .contact-mail-text {
+  display: inline;
+  margin-top: 5px;
+  margin-left: 65px;
+  font-size: 16px;
+  font-family: "Open sans";
+  font-weight: 400;
+}
+.contact .contact-phone-icon {
+  display: block;
 }
