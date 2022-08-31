@@ -450,14 +450,16 @@
 
 .pricing {
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 }
 .pricing .pricing-tittle {
   font-size: 36px;
   font-family: "Raleway";
   font-weight: normal;
   color: #000000;
-  position: relative;
-  top: 30px;
+  margin-top: 53px;
+  margin-bottom: 14px;
   text-align: center;
 }
 .pricing .pricing-square-red {
@@ -468,7 +470,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 54px;
   margin: auto;
 }
 .pricing .pricing-square-red .square-red-tittle {
@@ -517,6 +518,75 @@
   margin-right: 10px;
 }
 .pricing .pricing-square-red li:nth-child(n+4)::before {
+  content: url("/assets/Close.svg");
+  margin-right: 10px;
+}
+.pricing .pricing-square-blue {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 54px auto 0px;
+  border: 1px solid #08A6E4;
+  border-radius: 18px;
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.1607843137);
+  width: 339px;
+  height: 277px;
+}
+.pricing .pricing-square-blue .square-blue-tittle {
+  position: absolute;
+  top: 91px;
+  left: 50px;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #000000;
+}
+.pricing .pricing-square-blue .square-blue-price {
+  position: absolute;
+  top: 116px;
+  left: 66px;
+  font-size: 46px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #08A6E4;
+}
+.pricing .pricing-square-blue .square-price-subtitle {
+  position: absolute;
+  top: 180px;
+  left: 69px;
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #000000;
+}
+.pricing .pricing-square-blue .square-blue-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #08A6E4;
+  opacity: 1;
+  position: absolute;
+  top: 252px;
+  font-size: 13px;
+  font-family: "Open Sans";
+}
+.pricing .pricing-square-blue li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  left: 60px;
+  margin-top: 20px;
+}
+.pricing .pricing-square-blue li:nth-child(-n+4)::before {
+  content: url("/assets/Chechmark-1.svg");
+  margin-right: 10px;
+}
+.pricing .pricing-square-blue li:nth-child(n+5)::before {
   content: url("/assets/Close.svg");
   margin-right: 10px;
 }

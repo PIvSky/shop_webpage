@@ -1,12 +1,14 @@
 .pricing {
     background-color: map-get($colors, "white");
+    display: flex;
+    flex-direction: column;
     .pricing-tittle {
         font-size: 36px;
         font-family: 'Raleway';
         font-weight: normal;
-        color: #000000;
-        position: relative;
-        top: 30px;
+        color: map-get($colors, "black");
+        margin-top: 53px;
+        margin-bottom: 14px;
         text-align: center;
     }
     .pricing-square-red {
@@ -17,7 +19,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 54px;
         margin: auto;
         .square-red-tittle {
             position: absolute;
@@ -26,7 +27,7 @@
             font-size: 20px;
             font-family: 'Raleway';
             font-weight: bold;
-            color: #000000;
+            color: map-get($colors, "black");
         }
         .square-red-price {
             position: absolute;
@@ -67,6 +68,76 @@
                 content: url("/assets/Close.svg");
                 margin-right: 10px;;
 
+            }
+        }
+    }
+    .pricing-square-blue {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 54px auto 0px; 
+        border: 1px solid map-get($colors, "primary");
+        border-radius: 18px;
+        box-shadow: 5px 10px 27px #07ACE629;
+        width: 339px;
+        height: 277px;
+        
+        .square-blue-tittle {
+            position: absolute;
+            top: 91px;
+            left: 50px;
+            font-size: 20px;
+            font-family: 'Raleway';
+            font-weight: bold;
+            color: map-get($colors, "black");
+        }
+        .square-blue-price {
+            position: absolute;
+            top: 116px;
+            left: 66px;
+            font-size: 46px;
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color: map-get($colors, "primary");
+        }
+        .square-price-subtitle {
+            position: absolute;
+            top: 180px;
+            left: 69px;
+            font-size: 12px;
+            font-family: 'Raleway';
+            font-weight: bold;
+            color: map-get($colors, "black");
+        }
+        .square-blue-btn {
+            width: 150px;
+            height: 50px;
+            border-radius: 23px;
+            color: map-get($colors, "white");
+            border: none;
+            background-color: map-get($colors, "primary");
+            opacity: 1;
+            position: absolute;
+            top: 252px; 
+            font-size: 13px;
+            font-family: 'Open Sans';
+        }
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            position: relative;
+            top: 10px;
+            left: 60px;
+            margin-top: 20px;
+            &:nth-child(-n+4)::before {
+                content: url("/assets/Chechmark-1.svg");
+                margin-right: 10px;;
+            }
+            &:nth-child(n+5)::before {
+                content: url("/assets/Close.svg");
+                margin-right: 10px;
             }
         }
     }
