@@ -55,16 +55,19 @@
             font-size: 14px;
             font-family: 'Open Sans';
             font-weight: 500;
-            margin: 1px;
             position: relative;
             top: 10px;
             left: 60px;
-        }
-        .checkmark {
-            position: relative;
-            top: 30px;
-            left: 45px;
-        }
+            margin-top: 20px;
+            &:nth-child(-n+3)::before {
+                content: url("/assets/Chechmark-1.svg");
+                margin-right: 10px;;
+            }
+            &:nth-child(n+4)::before {
+                content: url("/assets/Close.svg");
+                margin-right: 10px;;
 
+            }
+        }
     }
 }

@@ -23,7 +23,7 @@
             margin-bottom:  27px;
             margin: auto;
             display: flex;
-            top: 38px;
+            top: 30px;
             width: 193px;
             height: 110px;
             opacity: 1;
@@ -43,7 +43,6 @@
         }
         &__tittle {
             font-size: 30px;
-            position: relative;
             top: 27px;
             display: block;
             margin: 26px 21px 10px 21px;
@@ -52,7 +51,6 @@
             color: #000000;
         }
         &__text {
-            position: relative;
             display: block;
             top: 70px;
             margin: 10px 21px 30px 22px;
@@ -71,15 +69,12 @@
             top: 41px;
             bottom: 20px;
             margin: 41px 30px 0px 30px;
-            // display: flex;
-            // flex-direction: column;
+            display: flex;
+            flex-direction: column;
             &__img {
-                position: absolute;
-                margin-top: 38px;
-                margin-bottom:  27px;
-                margin: auto;
+                position: relative;
                 display: flex;
-                top: 19px;
+                top: 25px;
                 left: 90px;
                 width: 193px;
                 height: 110px;
@@ -93,22 +88,19 @@
                 height: 132px;
                 margin: auto;
                 position: absolute;
-                // display: flex;
                 top: 12px;
                 left: 90px;
+                z-index: 1;
             }
             &__tittle {
                 font-size: 30px;
-                position: relative;
-                top: 100px;
-                padding: 12px 0px 12px 0px;
-                margin: 0px 21px 0px 21px;
+                // position: relative;
+                margin: 50px 21px 0px 21px;
                 font-family: 'Raleway';
                 font-weight: normal;
                 color: #000000;
             }
             &__text {
-                position: relative;
                 top: 100px;
                 margin: 18px 21px 30px 22px;
                 font-size: 16px;
@@ -125,8 +117,6 @@
             margin: 41px 30px 0px 30px;
             &__tittle {
                 font-size: 30px;
-                position: relative;
-                top: 10px;
                 display: block;
                 margin: 26px 21px 10px 21px;
                 font-family: 'Raleway';
@@ -134,8 +124,6 @@
                 color: #000000;
             }
             &__text {
-                position: relative;
-                top: 10px;
                 margin: 18px 21px 30px 22px;
                 font-size: 16px;
                 font-family: 'Open Sans';
@@ -150,10 +138,8 @@
         background-color: map-get($colors, "green" );
         &__img{
             position: relative;
-            // object-position: center;
-            // margin-left: auto;
-            // margin-right: auto;
-            // czemu to się kurwa nie centruje - ani górna ani dolna metoda
+            top: 40px;
+            margin: auto;
             width: 296px;
             height: 208px;
         }
