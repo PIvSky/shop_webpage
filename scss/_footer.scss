@@ -1,3 +1,50 @@
 .footer {
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -5px 40px #00000029;
+    // ukradzione z rozwiązania
+    @include lg {
+
+    }
+    .footer-logo {
+        margin: 22px 0px 1px 17px;
+        font-size: 26px;
+        font-family: 'raleway';
+        font-weight: 300;
+        color: map-get($colors, "primary" );
+        @include lg {
+            margin-left: 137px;
+        }
+    }
+    .footer-rights {
+        margin: 0px 0px 21px 17px;
+        font-size: 11px;
+        font-family: 'open sans';
+        font-weight: 400;
+        color: map-get($colors, "grey" );
+        @include lg {
+            margin-left: 137px;
+        }
+    }
+    .footer-tw {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 74px;
+        @include lg {
+            right: 180px;
+        }
+    }
+    .footer-fb {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        @include lg {
+            right: 136px;
+        }
+    }
 }
