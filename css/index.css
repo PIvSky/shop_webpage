@@ -675,18 +675,62 @@
   font-weight: 400;
 }
 .contact .contact-mail-icon {
-  display: inline;
   margin-top: 25px;
   margin-left: 30px;
+  width: 27px;
+  height: 27px;
 }
 .contact .contact-mail-text {
   display: inline;
-  margin-top: 5px;
-  margin-left: 65px;
+  position: relative;
+  bottom: 7px;
+  margin-left: 8px;
+  margin-bottom: 5px;
   font-size: 16px;
   font-family: "Open sans";
   font-weight: 400;
+  color: #A5A5A5;
 }
 .contact .contact-phone-icon {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 27px;
+  height: 27px;
+}
+.contact .contact-phone-text {
+  display: inline;
+  position: relative;
+  bottom: 5px;
+  margin-top: 5px;
+  margin-left: 8px;
+  font-size: 16px;
+  font-family: "Open sans";
+  font-weight: 400;
+  color: #A5A5A5;
+}
+.contact .contact-name {
   display: block;
+  margin: 53px 0px 0px 30px;
+  font-size: 11px;
+  font-family: "open sans";
+  color: #08A6E4;
+  text-transform: uppercase;
+}
+.contact .contact-name-input {
+  display: block;
+  margin: 32px 0px 0px 30px;
+  border: none;
+  border-bottom: 2px solid #A5A5A5;
+}
+.contact .contact-email {
+  display: block;
+  margin: 42px 0px 0px 30px;
+  font-size: 11px;
+  font-family: "open sans";
+  color: #08A6E4;
+  text-transform: uppercase;
+}
+.contact .contact.checkbox {
+  display: block;
+  margin: 35px 0px 0px 30px;
 }
