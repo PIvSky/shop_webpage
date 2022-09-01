@@ -1,12 +1,20 @@
 .contact {
-    // box-shadow: inset 0 -20px 0 0 rgb(191, 195, 202);
-    // box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+    @include lg {
+        margin:auto;
+        width: 896px;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+    }
     .contact-tittle {
         margin-top: 77px;
         margin-left: 30px; 
         font-size: 40px;
         font-family: 'raleway';
         font-weight: 500;
+        @include lg {
+            grid-column: 1;
+        }
 
     }
     .contact-text {
@@ -15,6 +23,9 @@
         font-size: 16px;
         font-family: 'Open sans';
         font-weight: 400;
+        @include lg {
+            grid-column: 1;
+        }
     }
     .contact-mail-icon {
         // display: inline;
@@ -22,6 +33,11 @@
         margin-left: 30px;
         width: 27px;
         height: 27px;
+        @include lg {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
     }
     .contact-mail-text {
         display: inline;
@@ -33,6 +49,10 @@
         font-family: 'Open sans';
         font-weight: 400;
         color: map-get($colors, "grey");
+        @include lg {
+            grid-row: 2;
+            grid-column: 1;
+        }
     }
     .contact-phone-icon {
         margin-top: 10px;
@@ -64,6 +84,9 @@
         margin: 32px 0px 0px 30px;
         border: none;
         border-bottom: 2px solid map-get($colors, "grey" );
+        @include lg {
+            grid-column: 2;
+        }
     }
     .contact-email{
         display: block;
@@ -72,6 +95,9 @@
         font-family: 'open sans';
         color: map-get($colors, "primary");
         text-transform: uppercase;
+        @include lg {
+            grid-column: 2;
+        }
     }
     .contact-end-container {
         margin: 35px 38px 0px 30px;
@@ -109,6 +135,9 @@
         box-shadow: 5px 10px 14px map-get($colors, "primary" );
         border-radius: 35px;
         border: none;
-
+        @include lg {
+            grid-column: 2;
+            
+        }
     }
 }
