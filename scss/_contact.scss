@@ -71,15 +71,42 @@
         color: map-get($colors, "primary");
         text-transform: uppercase;
     }
-    .contact.checkbox {
-        display: block;
-        margin: 35px 0px 0px 30px;
-        
+    .contact-end-container {
+        margin: 35px 38px 0px 30px;
+        display: inline-grid;
+        grid-column: 2;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: auto;
     }
+    .contact-checkbox {
+        grid-column: 1;
+        width: 24px;
+        height: 24px;
+        :checked {
+            background-image: url("/assets/Chechmark-1.svg");
+            // coś tu nie bangla
+        }
+    }
+    
     .contact-checkbox-text {
-        // display: inline;
+        grid-column: 2;
+        font-size: 12px;
+        font-family: 'open sans';
+        color: map-get($colors, "grey" );
+        cursor: auto;
     }
     .contact-btn {
+        margin: 21px 33px 44px 116px;
+        width: 226px;
+        height: 57px;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'open sans';
+        color: map-get($colors, "white" );
+        background-color: map-get($colors, "primary" );
+        box-shadow: 5px 10px 14px map-get($colors, "primary" );
+        border-radius: 35px;
+        border: none;
 
     }
 }

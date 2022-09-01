@@ -730,7 +730,38 @@
   color: #08A6E4;
   text-transform: uppercase;
 }
-.contact .contact.checkbox {
-  display: block;
-  margin: 35px 0px 0px 30px;
+.contact .contact-end-container {
+  margin: 35px 38px 0px 30px;
+  display: inline-grid;
+  grid-column: 2;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+}
+.contact .contact-checkbox {
+  grid-column: 1;
+  width: 24px;
+  height: 24px;
+}
+.contact .contact-checkbox :checked {
+  background-image: url("/assets/Chechmark-1.svg");
+}
+.contact .contact-checkbox-text {
+  grid-column: 2;
+  font-size: 12px;
+  font-family: "open sans";
+  color: #A5A5A5;
+  cursor: auto;
+}
+.contact .contact-btn {
+  margin: 21px 33px 44px 116px;
+  width: 226px;
+  height: 57px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "open sans";
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px #08A6E4;
+  border-radius: 35px;
+  border: none;
 }
