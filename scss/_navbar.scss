@@ -55,12 +55,13 @@
     .navbar-list {
         list-style-type: none;
         padding: 0;
+        padding-left: 25px;
         position: absolute;
-        left: 25px;
+        left: 0px;
         top: 95px;
         flex-direction: column;
         background-color: white;
-        width: 100%;
+        width: 100vw;
         padding-bottom: 20px;
         display: none;
         overflow: hidden;
