@@ -14,7 +14,7 @@ I made this website from the very scratch - whole html and stylizations in ***SC
 - RWD with Mobile First approach
 - BEM methodology
 
-### How to Install and Run the Project
+### Requirements
 
 To run this webpage I reccomand using:
 - VS Code
@@ -22,6 +22,10 @@ To run this webpage I reccomand using:
 Extensions:
 - Live Sass Compiler
 - Live Server
+
+Install node_modules
+In VS Code terminal install project dependancies by running: `npm install`.
+
 
 ##### To run Live Sass Compiler
 you must search and install it in VS Code extensions.
